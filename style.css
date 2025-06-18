@@ -2,8 +2,14 @@
     --cor-principal: #2a084e;
     --cor-do-texto: rgb(255, 255, 255);
     --fonte: "Parisienne", cursive;
+    --font-generica: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
+}
+
+html {
+    width: 100%;
+    height: 100%;
 }
 
 body {
@@ -13,33 +19,35 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    overflow-y: hidden; 
+    /* overflow-y: hidden;  */
 }
 
-main {
+.container-principal {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 h1 {
-    font-size: 120pt;
+    font-size: 50pt;
+    margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 60pt;
+    font-size: 20pt;
     margin-top: 0;
     font-family: "Leckerli One", cursive;
     font-weight: 400;
+    margin-top: 20px;
 }
 
 .tabela {
-    height: 900px;
-    width:900px;
+    height: 500px;
+    width:500px;
     background-color: var(--cor-do-texto);
     display: flex;
     flex-wrap: wrap;
@@ -57,11 +65,57 @@ h2 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 160pt;
+    font-size: 75pt;
+    text-align: center;
 }
 
 .quadrado:hover {
     background-color: rgb(204, 171, 235);
+}
+
+.placar {
+    font-family: var(--font-generica);
+    font-weight: 700;
+    font-size: 25pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.container-fim-de-jogo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: dotted #8425ea;
+    border-radius: 15px;
+    padding: 0px 50px;
+    height: 200px;
+    margin-top: 200px;
+}
+
+.container-fim-de-jogo p {
+    font-size: 40pt;
+    font-family: var(--font-generica)
+}
+
+.botao-reiniciar {
+    height: 50px;
+    width: 180px;
+    background-color:blanchedalmond;
+    color: var(--cor-principal);
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 15pt;
+}
+
+.botao-reiniciar:hover {
+    background-color:rgb(237, 201, 146) ;
 }
 
 @media (max-width: 428px) {
@@ -71,7 +125,8 @@ h2 {
         padding: 0;
         margin: 0;
         overflow-x: hidden;
-        margin-top: 80px;
+        margin-top: 0px;
+        overflow-y: hidden;
     }
 
     main {
@@ -108,6 +163,7 @@ h2 {
         border-radius: 10px;
         box-sizing: border-box;
         padding: 20px;
+        margin-top: 40px;
     }
 
     .quadrado {
@@ -124,4 +180,23 @@ h2 {
     .quadrado:hover {
         background-color: rgb(204, 171, 235);
     }
+
+    .container-fim-de-jogo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: dotted #8425ea;
+    border-radius: 15px;
+    padding: 0px 50px;
+    height: 350px;
+    margin-bottom: 200px;
+}
+
+.container-fim-de-jogo p {
+    font-size: 35pt;
+    font-family: var(--font-generica)
+}
+
 }
