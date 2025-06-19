@@ -23,7 +23,7 @@ const tabela = document.querySelector(".container-principal");
 const textoDoRodape = document.querySelector('h2');
 const fimDeJogo = document.getElementById('div-fim-de-jogo');
 const textoFimDeJogo = document.querySelector(".fim-de-jogo");
-const botaoReiniciarJogo = document.querySelector(".botao-reiniciar");
+const btnReiniciarJogo = document.getElementById("btnReiniciar");
 const placarNaTela = document.querySelector(".placar");
 const btnNovoJogo = document.querySelector('.btn-novo-jogo');
 
