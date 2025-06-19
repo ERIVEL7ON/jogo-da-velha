@@ -103,9 +103,9 @@ quadrados.forEach(quadrado => {
 });
 
 // Botão para reiniciar o jogo (mas manter o placar)
-botaoReiniciarJogo.addEventListener('click', (e) => {
+btnReiniciarJogo.addEventListener('click', (e) => {
     e.preventDefault();
-
+    
     quadrados.forEach(quadrado => {
         quadrado.textContent = '';
         quadrado.style.pointerEvents = 'auto';
@@ -114,8 +114,6 @@ botaoReiniciarJogo.addEventListener('click', (e) => {
     escolhasP1.length = 0;
     escolhasP2.length = 0;
     alternar = true;
-
-    textoDoRodape.innerHTML = 'É a vez do P1';
     fimDeJogo.classList.add('hidden');
     tabela.classList.remove('hidden');
 });
