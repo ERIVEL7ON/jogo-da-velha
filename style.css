@@ -22,7 +22,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    /* overflow-y: hidden;  */
+    overflow-y: hidden;
 }
 
 .container-principal {
@@ -46,8 +46,8 @@ h2 {
 }
 
 .tabela {
-    height: 500px;
-    width:500px;
+    height: 450px;
+    width:450px;
     background-color: var(--cor-do-texto);
     display: flex;
     flex-wrap: wrap;
