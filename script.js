@@ -99,8 +99,19 @@ quadrados.forEach(quadrado => {
 
         placarNaTela.innerHTML =
             `${velha.velha1.valor} ${pontuacaoP1} X ${pontuacaoP2} ${velha.velha2.valor}`;
+            
+            
+        if (escolhasP1.length + escolhasP2.length == 9) {
+            tabela.classList.add('hidden');
+            fimDeJogo.classList.remove('hidden');
+            textoFimDeJogo.innerHTML = 'Jogo empatado, vamos novamente!'
+            btnReiniciarJogo.innerText = 'Recomeçar'
+
+        }
     });
 });
+
+
 
 // Botão para reiniciar o jogo (mas manter o placar)
 btnReiniciarJogo.addEventListener('click', (e) => {
